@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile (Mikey Occur)</title>  
+    <link rel="icon" href="../Images/Logo Mikey Occur.png" type="image/png">
+    <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="../css/information.css">
+</head>
+<body>
+    <!-- Nút Back ở trên bên trái -->
+    <!-- <a href="../home.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back
+    </a> -->
+
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="../Images/Logo Mikey Occur.png" alt="Logo" class="logo-img">
+        </a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="../Pages/information.html">Information</a></li>
+            <li><a href="../Pages/certification.html">Certifications</a></li>
+        </ul>
+    </nav>
+
+    <!-- Card profile -->
+    <div class="card">
+        <div class="card_img">
+            <img src="../Images/ImageMe.jpg" alt="">
+        </div>
+        <h2>Thanh Long</h2>
+        <p>Back-End Developer</p>
+        <div class="card_social">
+          <a href="https://www.facebook.com/profile.php?id=100011359115285" >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://github.com/mikey-occur" >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <!-- Phone Icon -->
+         <a href="#" id="phoneIcon" class="phone_icon" title="Show Phone Number">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <!-- Email Icon -->
+        <a href="#" id="emailIcon" class="email_icon" title="Show Email">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+        </div>
+        <button id="viewCVButton">View My CV</button>
+        <!-- Phone Number Display (Initially hidden) -->
+        <div id="email" class="email" style="display:none;">
+            <p>Email : <span id="emailText">occurmikey@gmail.com</span></p>
+        </div>
+        <div id="phoneNumber" class="phone_number" style="display:none;">
+            <p>Phone Number: <span id="numberText">+84 98 885 8503</span></p>
+        </div>
+    </div>
+    <!-- CV Image Display (Initially hidden) -->
+    <div id="cv" class="cv" style="display:none;">
+        <img src="../Images/MyCV.png" alt="My CV" />
+    </div>
+    <script src="../js/information.js"></script>
+</body>
+</html>
