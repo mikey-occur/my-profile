@@ -2,15 +2,6 @@
 Hi there! 👋
 I’m thrilled you’ve stopped by my GitHub profile. This is where I share my coding journey, explore exciting projects, and continue to grow as a developer. Whether you're here to find inspiration, collaborate, or simply browse, I hope you find value in what I have to offer. 🚀
 
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
----
-[![](https://visitcount.itsvg.in/api?id=mikey-occur&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-
 ## ✨ "A Note From Me"
 In the ever-evolving world of coding, I believe in the power of persistence and creativity.
 
