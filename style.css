@@ -240,3 +240,134 @@ a{
         transform: translateY(0%);
     }
 }
+
+/* Media query cho màn hình nhỏ hơn hoặc bằng 480px */
+@media (max-width: 480px) {
+    /* Điều chỉnh kích thước navbar */
+    .navbar {
+        padding: 10px 5%;
+        font-size: 5%; /* Thu nhỏ chữ trong navbar */
+    }
+
+    .navbar .logo-img {
+        width: 4px; /* Thu nhỏ logo */
+        height: 4px;
+    }
+
+    .navbar ul li {
+        margin-left: 10px; /* Giảm khoảng cách giữa các menu */
+    }
+
+    .navbar ul li a {
+        font-size: 5px; /* Thu nhỏ kích thước chữ */
+    }
+
+    /* Điều chỉnh khoảng cách trong phần home */
+    .home {
+        padding: 60px 5% 0;
+        gap: 20px; /* Giảm khoảng cách giữa các phần tử */
+        flex-direction: column; /* Sắp xếp theo cột */
+        text-align: center; /* Canh giữa nội dung */
+        min-height: 120vh; /* Tăng chiều cao tối thiểu */
+        overflow: auto; /* Đảm bảo nội dung có thể cuộn nếu cần */
+    }
+
+    .home-info h1 {
+        margin-top: 100px    ;
+        font-size: 36px; /* Thu nhỏ tiêu đề */
+    }
+
+    .home-info h2 {
+        font-size: 20px; /* Thu nhỏ tiêu đề phụ */
+    }
+
+    .home-info p {
+        font-size: 12px; /* Thu nhỏ đoạn văn */
+    }
+
+    .home-img .img-box {
+        width: 60vw; /* Thu nhỏ hình ảnh */
+        height: 60vw;
+    }
+
+    .btn-sci {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Thêm khoảng cách cuối trang */
+    .home::after {
+        content: '';
+        display: block;
+        height: 100px; /* Khoảng trống cuối trang */
+    }
+}
+
+
+@media (max-width: 720px) {
+    .navbar {
+        padding: 20px 7%;
+    }
+
+    .navbar .logo-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 30px;
+        padding: 80px 7% 0; /* Thêm khoảng cách từ trên cùng */
+    }
+
+    .home-info {
+        margin-top: 50px; /* Đẩy "Thành Long" xuống dưới thanh logo */
+        text-align: center; /* Canh giữa tiêu đề */
+    }
+
+    .home-info h1 {
+        font-size: 45px;
+        margin-top: 0px;
+    }
+
+    .home-info h2 {
+        font-size: 26px;
+    }
+
+    .home-info p {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    .home-img .img-box {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .home-img .img-box::before,
+    .home-img .img-box::after {
+        width: 400px;
+        height: 400px;
+    }
+
+    .home-img .img-box .img-item img {
+        width: 130%;
+        left: 12px;
+        bottom: 40px;
+    }
+
+    .btn-sci {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
