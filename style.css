@@ -343,12 +343,6 @@ a{
         color: var(--primary-color); /* Hover effect to highlight links */
     }
 
-    /* Ensure body and html stretch to fill the entire screen */
-    html, body {
-         height: 100%; /* Make sure the body and html fill the full height */
-         margin: 0; /* Remove default margin */
-    }
-
     /* Home Section */
     .home {
         padding: 20px 5% 10px; /* Giảm padding */
@@ -356,10 +350,6 @@ a{
         flex-direction: column; /* Cột cho giao diện nhỏ */
         text-align: center; /* Nội dung căn giữa */
         min-height: 100vh; /* Chiều cao tối thiểu vừa đủ */
-        display: flex; /* Use flexbox for alignment */
-        flex-grow: 1; /* Allow the section to grow and fill available space */
-        position: relative; /* Position relative for better control */
-        background-color: #1f242d; /* Set the background color */
     }
 
     .home-info h1 {
