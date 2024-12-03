@@ -44,3 +44,21 @@ viewCVButton.addEventListener('click', function() {
         viewCVButton.innerText = "View My CV"; // Thay đổi văn bản nút lại
     }
 });
+
+
+// JavaScript để điều khiển menu trong màn hình nhỏ
+function toggleMenu() {
+    const menuList = document.querySelector('.menu-list');
+    menuList.classList.toggle('active');
+}
+
+ // Close the menu if clicking outside the menu or hamburger icon
+ document.addEventListener('click', function(event) {
+    const menuList = document.querySelector('.menu-list');
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    // If the click is outside the menu or the hamburger icon, close the menu
+    if (!menuList.contains(event.target) && !menuIcon.contains(event.target)) {
+        menuList.classList.remove('active');
+    }
+});

@@ -241,7 +241,6 @@ a{
     }
 }
 
-
 /* Menu List Styling */
 .menu-list {
     display: flex;
@@ -280,29 +279,23 @@ a{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.menu-list.active li {
-    margin: 10px 0; /* Vertical spacing for mobile view */
-}
-
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     /* Navbar */
     .navbar {
-        padding: 10px 5%;
-        font-size: 14px; /* Kích thước chữ hợp lý */
+        padding: 20px 7%;
     }
 
     .navbar .logo-img {
-        width: 40px; /* Kích thước logo vừa phải */
-        height: 40px;
+        width: 80px;
+        height: 80px;
     }
 
     .navbar ul li {
-        margin-left: 5px; /* Giảm khoảng cách giữa các mục */
+        margin-left: 20px; /* Reduced margin for better spacing */
     }
 
     .navbar ul li a {
-        font-size: 12px; /* Thu nhỏ nhưng vẫn dễ đọc */
+        font-size: 16px; /* Slightly smaller font for better readability */
     }
 
     .navbar ul {
@@ -321,9 +314,9 @@ a{
         flex-direction: column; /* Stack the items vertically */
         background-color: #1f242d;
         position: absolute;
-        top: 60px; /* Position below the navbar */
+        top: 80px; /* Position below the navbar */
         right: 0;
-        width: 100%; /* Full-width dropdown */
+        width: 50%; /* Full-width dropdown */
         padding: 15px;
         z-index: 10;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Drop shadow for better visibility */
@@ -344,102 +337,6 @@ a{
     }
 
     /* Home Section */
-    .home {
-        padding: 20px 5% 10px; /* Giảm padding */
-        gap: 15px; /* Khoảng cách vừa phải */
-        flex-direction: column; /* Cột cho giao diện nhỏ */
-        text-align: center; /* Nội dung căn giữa */
-        min-height: 100vh; /* Chiều cao tối thiểu vừa đủ */
-    }
-
-    .home-info h1 {
-        margin-top: 20px;
-        font-size: 24px; /* Dễ đọc hơn */
-    }
-
-    .home-info h2 {
-        font-size: 16px;
-    }
-
-    .home-info p {
-        font-size: 14px;
-        line-height: 1.5; /* Dòng cách đều */
-    }
-
-    .home-img .img-box {
-        width: 80vw; /* Tối ưu kích thước hình ảnh */
-        height: auto; /* Giữ tỉ lệ ảnh */
-    }
-
-    /* Nút và khoảng trống */
-    .btn-sci {
-        margin-top: 20px;
-        padding: 10px;
-        font-size: 14px; /* Tăng kích thước chữ trong nút */
-    }
-
-    /* Khoảng trống cuối trang */
-    .home::after {
-        content: '';
-        display: block;
-        height: 50px; /* Không cần quá lớn */
-    }
-}
-
-
-
-@media (max-width: 720px) {
-    .navbar {
-        padding: 20px 7%;
-    }
-
-    .navbar .logo-img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .navbar ul li a {
-        font-size: 18px;
-    }
-
-    .navbar ul {
-        display: none; /* Hide menu items by default */
-    }
-
-    .menu-icon {
-        display: block; /* Show menu icon on small screens */
-        font-size: 28px; /* Slightly larger icon for better visibility */
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .menu-list.active {
-        display: flex; /* Show the menu list when active */
-        flex-direction: column; /* Stack the items vertically */
-        background-color: #1f242d;
-        position: absolute;
-        top: 60px; /* Position below the navbar */
-        right: 0;
-        width: 100%; /* Full-width dropdown */
-        padding: 15px;
-        z-index: 10;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Drop shadow for better visibility */
-    }
-
-    .menu-list.active li {
-        margin: 10px 0; /* Space between items */
-    }
-
-    .menu-list li a {
-        font-size: 18px; /* Adjust font size for readability on small screens */
-        padding: 10px;
-        text-align: center; /* Center the text */
-    }
-
-    .menu-list li:hover a {
-        color: var(--primary-color); /* Hover effect to highlight links */
-    }
-
     .home {
         flex-direction: column;
         gap: 30px;
