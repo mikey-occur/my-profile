@@ -105,25 +105,30 @@ img {
     transition: 0.5s;
 }
 
-.close{
-    position: fixed;
-    top: 15px;
-    right: 25px;
-    font-size: 35px;   
+.close {
+    position: absolute; /* Đảm bảo vị trí dựa trên modal */
+    top: 110px; /* Đặt phía dưới navbar */
+    right: 25px; /* Khoảng cách từ cạnh phải */
+    font-size: 35px;
+    z-index: 10; /* Đảm bảo không bị che bởi modal */
+    cursor: pointer; /* Thêm hiệu ứng con trỏ */
 }
 
+
 .control{
-    font-size: 35px;
+    font-size: 35px;    
     color: rgba(255, 255, 255, 0.8);
     position: absolute;
 }
 
 .control.prev{
     left: 15px;
+    cursor: pointer; /* Thêm hiệu ứng con trỏ */
 }
 
 .control.next{
     right: 15px;
+    cursor: pointer; /* Thêm hiệu ứng con trỏ */
 }
 
 .gallery_inner{
