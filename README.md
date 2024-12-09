@@ -1,7 +1,7 @@
 
-## 🌟 Welcome to My GitHub Profile!
+## 🌟 Welcome to My Profile!
 Hi there! 👋
-I’m thrilled you’ve stopped by my GitHub profile. This is where I share my coding journey, explore exciting projects, and continue to grow as a developer. Whether you're here to find inspiration, collaborate, or simply browse, I hope you find value in what I have to offer. 🚀
+I’m thrilled you’ve stopped by my profile. This is where I share my coding journey, explore exciting projects, and continue to grow as a developer. Whether you're here to find inspiration, collaborate, or simply browse, I hope you find value in what I have to offer. 🚀
 
 ## Link Web Profile
 
