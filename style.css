@@ -393,4 +393,14 @@ a{
     hr, .divider, .section-divider {
         display: none; /* Hide horizontal lines */
     }
+
+    .bars-animation .bar{
+        width: 100%;
+        height: 125%;
+        background: #1f242d;
+        transform: translateY(-100%);
+        animation: show-bars .5s ease-in-out forwards;
+        animation-delay: calc(.1s * var(--i));
+    }
+    
 }

@@ -257,8 +257,21 @@ a{
 
     .card {
         width: 90%;
-        height: auto;
+        height: 42%;
         margin: 10px auto;
+        
+    }
+
+    .email, .phone_number {
+        backdrop-filter: blur(80px); /* Làm mờ phần phía sau */
+        margin-bottom: 20px;
+
+    }
+
+    .card_img:hover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Đảm bảo ảnh được phóng to và bao phủ hết */
     }
 
     .card_img {
