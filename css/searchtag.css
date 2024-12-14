@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+    background: #8cc84c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper{
+    background: white;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+}
+
+.title{
+    font-size: 22px;
+}
+
+.content{
+    border: 1px solid #888; /* Cái này là làm viền */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border-radius: 5px;
+ }
+
+.content li{
+    background: #8cc84c;
+    color: white;
+    border-radius: 3px;
+    list-style: none; /* Cái này để bỏ cái đấu chấm style cũ của nó */
+    margin: 4px 4px;
+    padding: 10px;
+    transition: all 0.3s ease-in;
+ }
+
+ .content li:hover{
+    background: green;
+ }
+
+ .content li i{
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+ }
+
+ .content li i:hover{
+    background: #426023;
+ }
+ 
+ .content input{
+    border: none;
+    outline: none; /* Loại bỏ cái khung khi 'click' vào input */
+    font-size: 20px;
+    margin: 10px;
+    flex: 1;
+ }
+
+ .remove-all{
+    background: #8cc84c;
+    color: white;
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer; /* Hiện con trỏ khi trỏ vào */
+    transition: all 0.3s ease-in;
+ }
+
+ .remove-all:hover{
+    background: green;
+ }
