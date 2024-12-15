@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins';
+    background: rgb(10, 190, 230);
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alert{
+    font-size: 40px;
+    font-weight: 600px;
+    color: #17a2b8;
+    background: white;
+    border-radius: 12px;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.box .result{
+    height: 250px;
+    width: 250px;
+    border: 7px solid white;
+    border-radius: 50%; /* Cái làm hình tròn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.card{
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+} 
+  
+.card p{
+    padding: 10px;
+    text-align: center; 
+    color: black;
+    font-size: 20px; 
+}
+
+.card p:first-child{
+    background: #44d6ea;
+    color: white;
+}
+
+.detail{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
