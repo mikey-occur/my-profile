@@ -1,5 +1,5 @@
 var username = document.querySelector('#username')
-var email = document.querySelector('#email')
+// var email = document.querySelector('#email')
 var password = document.querySelector('#password')
 var confirmPassword = document.querySelector('#confirm-password')
 var form = document.querySelector('form')
@@ -34,22 +34,22 @@ function checkEmptyError(listInput){
     return isEmptyError
 }
 
-function checkEmailError(input){
-    const regexEmail =
-  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+// function checkEmailError(input){
+//     const regexEmail =
+//   /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-    input.value = input.value.trim()
+//     input.value = input.value.trim()
 
-    let isEmptyError = !regexEmail.test(input.value)
-   if(regexEmail.test(input.value)){
-        showSuccess(input)
-   }else{
-        showError(input, 'Email valid')
-   }
+//     let isEmptyError = !regexEmail.test(input.value)
+//    if(regexEmail.test(input.value)){
+//         showSuccess(input)
+//    }else{
+//         showError(input, 'Email valid')
+//    }
 
-   return isEmptyError
+//    return isEmptyError
 
-}
+// }
 
 function checkLengthError(input, min ,max){
     input.value = input.value.trim()
@@ -80,13 +80,13 @@ function checkMatchPasswordError(passwordInput, cfPasswordInput){
 form.addEventListener('submit', function(e){
     e.preventDefault()
 
-    let isEmptyError = checkEmptyError([username, email, password, confirmPassword])
-    let isEmailError = checkEmailError(email)
+    let isEmptyError = checkEmptyError([username, password, confirmPassword])
+    // let isEmailError = checkEmailError(email)
     let isUsernameLengthError = checkLengthError(username, 4, 20)
     let isPasswordLengthError = checkLengthError(password, 4, 20)
     let isMatchError = checkMatchPasswordError(password, confirmPassword)
 
-    if(isEmptyError || isEmailError || isUsernameLengthError || isPasswordLengthError || isMatchError){
+    if(isEmptyError || isUsernameLengthError || isPasswordLengthError || isMatchError){
         // do thing
     }else{
         //logic,call API.....

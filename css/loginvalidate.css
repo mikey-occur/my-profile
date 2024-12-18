@@ -13,7 +13,8 @@
 
 body{
     height: 100vh;
-    background: linear-gradient(120deg, #3ca7ee, #9b408f);
+    /* background: linear-gradient(120deg, #3ca7ee, #9b408f); */
+    background-image: url('../Images/img_night.jpg');
     overflow: hidden;
     font-family: 'Poppins';
     display: flex;
@@ -25,12 +26,15 @@ body{
     width: 400px;
     border: none;
     border-radius: 10px;
-    background: white;
+    /* background: white; */
     padding: 40px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(215, 3, 252, 0.336);
 }
 
 .container h1{
     text-align: center;
+    color: white;
 }
 
 .form-control{
@@ -46,6 +50,16 @@ body{
     border: none;
     outline: none;
     border-bottom: 2px solid #adadad;
+    background-color: transparent; /* Nền trắng mờ */
+    backdrop-filter: blur(5px); /* Làm mờ nền bên trong */
+    padding: 5px 10px; /* Thêm khoảng cách bên trong */
+    color: white;
+}
+
+/* Áp dụng cho tất cả các input */
+input::placeholder {
+    font-weight: bold; /* Làm chữ đậm */
+    color: white; /* Màu chữ đậm */
 }
 
 /* Chỉnh .form-control span và .form-control input:focus ~ span để khi nhấn vào ôn điền sẽ có hiệu ứng gạch xanh dương dưới */
