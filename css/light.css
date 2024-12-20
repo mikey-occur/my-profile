@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a2e;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body.light-on{
+    background-color: #e6e6fa;
+}
+
+.light-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    perspective: 1000px;
+}
+
+.cord{
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, #666, #999);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.lantern{
+    width: 80px;
+    height: 180px;
+    background-color: transparent;
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.lantern:hover{
+    transform: scale(1.05) rotateX(5deg);
+}
+
+.cord-connection{
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #B8860B;
+}
+
+.lantern-frame{
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    background: linear-gradient(45deg, #FFD700, #DAA520);
+    border-radius: 10px 10px 50% 50%;
+    top: 5px;
+    z-index: -1;
+    box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: perspective(100px) rotateX(3deg);
+}
+
+.glass-globe{
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(218, 165, 32, 0.5);
+    border-radius: 10px 10px 50% 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.filament{
+    width: 40px;
+    height: 70px;
+    background: radial-gradient(circle at center, #FFD700, #ff8c00);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+    box-shadow: 0 0 30PX rgba(218, 165, 0, 0.5);
+}
+
+.lantern.on .glass-globe{
+    background-color: rgba(255, 255, 0, 0.5);
+    box-shadow: 0 0 50px rgba(255, 255, 0, 0.5), 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.lantern.on .filament{
+    opacity: 1;
+}
