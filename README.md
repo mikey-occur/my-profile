@@ -3,6 +3,8 @@
 Hi there! 👋
 I’m thrilled you’ve stopped by my profile. This is where I share my coding journey, explore exciting projects, and continue to grow as a developer. Whether you're here to find inspiration, collaborate, or simply browse, I hope you find value in what I have to offer. 🚀
 
+![Thanh Long's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mikey-occur&show_icons=true&theme=tokyonight&hide=prs,issues)
+
 ## Link Web Profile
 
 => https://mikey-occur.github.io/my-profile/
