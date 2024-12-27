@@ -71,3 +71,59 @@ body{
 .hide{
     display: none;
 }
+
+
+/* Media Queries cho màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+    .alert {
+        font-size: 24px;
+        padding: 8px 20px;
+    }
+
+    .box .result {
+        height: 180px;
+        width: 180px;
+        font-size: 40px;
+    }
+
+    .card {
+        width: 90%; /* Sử dụng gần hết chiều rộng màn hình */
+        max-width: 200px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+/* Media Queries cho màn hình nhỏ hơn 480px */
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .alert {
+        font-size: 20px;
+        padding: 6px 16px;
+    }
+
+    .box .result {
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+        max-width: 150px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .detail {
+        gap: 5px; /* Khoảng cách nhỏ hơn giữa các thẻ card */
+    }
+}

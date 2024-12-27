@@ -155,3 +155,59 @@ body{
     background-color: #bac383;
 }
   
+/* Media query cho màn hình nhỏ (điện thoại) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        box-shadow: 0 10px 20px #dbdbdb;
+    }
+
+    #slide {
+        margin-top: 20px;
+    }
+
+    .item {
+        width: 150px;
+        height: 200px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .item:nth-child(4) {
+        left: calc(50% + 180px);
+    }
+
+    .item:nth-child(5) {
+        left: calc(50% + 360px);
+    }
+
+    .item:nth-child(n+6) {
+        left: calc(50% + 540px);
+    }
+
+    .item .content {
+        left: 50px;
+        width: 200px;
+    }
+
+    .item .name {
+        font-size: 24px;
+    }
+
+    .item .des {
+        font-size: 14px;
+    }
+
+    .item button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .buttons button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
